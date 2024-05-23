@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>The New Health Hospital</h1>
+
+        <div class="main">
+            <div class="image">
+                <img src="images.jpg" height="800px" width="600px">
+            </div>
+            <form action="get">
+                <div class="form">
+                    <div class="one">
+                        <p>Section 1: Patient Profile</p>
+                        <label for="firstname">Firstname:</label><br />
+                        <input id="firstname" type="text" minlength="3" maxlength="20" required class="may"><br />
+
+                        <label for="laststname">Lastname:</label><br />
+                        <input id="lasttname" type="text" minlength="3" maxlength="20" required  class="may"><br />
+    
+                        <label for="num">Phone Number:</label><br />
+                        <input id="num" type="text" placeholder="+234" class="may"><br />
+    
+                        <label for="email">Email:</label><br />
+                        <input id="email" type="email" required  class="may"><br />
+
+                        <label for="dob">Date of birth:</label><br />
+                            <input id="dob" type="date" required ><br />
+    
+                            <label for="address">Residential Address:</label><br />
+                            <textarea id="address" rows="5" cols="15" class="may" minlength="20" maxlength="100"></textarea><br />
+                    </div>
+                            <hr>
+                            <div class="two">
+                            <p>Section 2: Patient Medical History</p>
+                                <label for="referal">Referred by a physician:</label><br />
+                                <input type="checkbox">yes/No<input type="checkbox"><br />
+    
+                                <label for="App_date">Appointment date and time:</label><br />
+                                <input id="App_date" type="datetime-local" class="may"><br /><br />
+
+                            <div>
+                                    <p>test taken</p>
+                                    <label for="malaria">Malaria</label>
+                                    <input id="malaria" type="checkbox" name="malaria" multiple>
+    
+                                    <label for="cholestrol">Cholestrol</label>
+                                    <input id="cholestrol" type="checkbox" name="cholestrol" multiple>
+    
+                                    <label for="typhoid">Typhoid</label>
+                                    <input id="typhoid" type="checkbox" name="typhoid" multiple>
+    
+                                    <label for="hiv">HIV</label>
+                                    <input id="hiv" type="checkbox" name="hiv" multiple>
+    
+                                    <label for="preg">Pregnancy Test</label>
+                                    <input id="preg" type="checkbox" name="preg" multiple>
+    
+    
+                        
+                            <hr/>
+
+                                   <div class="three">
+                                    <p>Section 3: Patient Consent</p>
+                                    <input id="agree" type="checkbox"> I consent to the use of my information for medical treatment and billing purposes. <br />
+                    </div>
+
+                    <button type="submit" name="submit">Add New Record</button>
+                    <button type="reset" onclick="cancel()">Cancel</button>
+            </form>
+                </div>            
+        </div>
+    </div>
+
+    <script>
+        function cancle() {
+            // Implement cancel logic here, like redirecting or clearing the form
+            alert("Record Submission Canclled");
+        }
+    </script>
+</body>
+</html>
